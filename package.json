@@ -1,6 +1,6 @@
 {
-	"name": "open-file-relative",
-	"displayName": "open-file-relative",
+	"name": "quickOpenRelative",
+	"displayName": "quickOpenRelative",
 	"description": "Open command palette with current directory filled in.",
 	"version": "0.0.1",
 	"engines": {
@@ -10,13 +10,13 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.quickOpenRelative"
+		"onCommand:quickOpenRelative.quickOpenRelative"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.quickOpenRelative",
+				"command": "quickOpenRelative.quickOpenRelative",
 				"title": "File: Quick Open Relative"
 			}
 		]
