@@ -8,7 +8,7 @@ export function activate(context: vscode.ExtensionContext) {
 		if (editor !== undefined) {
 			var currentlyOpenTabfilePath = editor.document.fileName;
 			var currentlyOpenFilename = path.basename(currentlyOpenTabfilePath);
-			var relativePath = currentlyOpenTabfilePath.replace(vscode.workspace.rootPath+"/", "");
+			var relativePath = currentlyOpenTabfilePath.replace(vscode.workspace.rootPath + path.sep, "");
 			var relativePathDir = relativePath.replace(currentlyOpenFilename, "");
 			vscode.commands.executeCommand('workbench.action.quickOpen', relativePathDir);
 		}
